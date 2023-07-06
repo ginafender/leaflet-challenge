@@ -1,7 +1,8 @@
 // Creating the map object
 var myMap = L.map("map", {
-    center: [27.96044, -82.30695],
-    zoom: 7
+  center: [42.877742, -97.380979],
+  zoom: 5
+
 });
 
   // Adding the tile layer
@@ -10,7 +11,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(myMap);
 
   // Load the GeoJSON data.
-var geoData = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/15-Mapping-Web/ACS-ED_2014-2018_Economic_Characteristics_FL.geojson";
+var geoData = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
 var geojson;
 
